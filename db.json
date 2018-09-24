@@ -1,0 +1,197 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "49pl8ktek7nipqs0x3wx6x3q6j4pii9s",
+    "fields": {
+        "session_data": "ZDJiYTM4NGIyNjYzOGZjMmZiMmZiODdjMTZmMGYyMDg1ZWU0NTJhOTp7Il9hdXRoX3VzZXJfaGFzaCI6ImNmZmEyMGI2ODM2MzM4MTg1MTQ3YjEzZjBkNTM3YTY2ZTQzZDE5MmEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMyJ9",
+        "expire_date": "2018-10-05T21:56:21.002Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gbris511ctngdnvwz65lzmtnd09441ts",
+    "fields": {
+        "session_data": "ZDJiYTM4NGIyNjYzOGZjMmZiMmZiODdjMTZmMGYyMDg1ZWU0NTJhOTp7Il9hdXRoX3VzZXJfaGFzaCI6ImNmZmEyMGI2ODM2MzM4MTg1MTQ3YjEzZjBkNTM3YTY2ZTQzZDE5MmEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMyJ9",
+        "expire_date": "2018-10-05T21:51:46.135Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rtym54ppujq832hsh4rizmsrot00r0wt",
+    "fields": {
+        "session_data": "ZDJiYTM4NGIyNjYzOGZjMmZiMmZiODdjMTZmMGYyMDg1ZWU0NTJhOTp7Il9hdXRoX3VzZXJfaGFzaCI6ImNmZmEyMGI2ODM2MzM4MTg1MTQ3YjEzZjBkNTM3YTY2ZTQzZDE5MmEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kcy5FbWFpbEF1dGgiLCJfYXV0aF91c2VyX2lkIjoiMyJ9",
+        "expire_date": "2018-10-08T12:48:10.570Z"
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$n7wXwu24S4iH$iBiMlEl87S4Te6bG0eeVkNjF0rDj1IdJaIu+dVSBEZY=",
+        "last_login": "2018-09-24T12:48:10.482Z",
+        "is_superuser": true,
+        "username": "alex_boys30@yahoo.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "alex_boys30@yahoo.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-09-20T11:48:32.266Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$pI8IZcmLmC3U$A1i8BljgaAaVjn+bGroVQR+15DzL3P48huqi8iElNK8=",
+        "last_login": "2018-09-21T21:22:54.252Z",
+        "is_superuser": false,
+        "username": "anisoarachifan@yahoo.com",
+        "first_name": "Anisoara",
+        "last_name": "chifan",
+        "email": "anisoarachifan@yahoo.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-09-21T21:22:36.420Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "photo",
+        "description": "photo sessionkaljsdlkasjdkljaskldjklasjdkljaskldjklasd\r\nasdklajskljdddddddddddddddddddddddddddddd\r\naskldjallllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll\r\nsfklngsklfjk;lsdjfklasjdklasjdklasjdkljaskldjaskld",
+        "price": "10.00"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-09-20T12:36:20.117Z",
+        "user": [
+            "alex_boys30@yahoo.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "photo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-09-20T12:46:38.145Z",
+        "user": [
+            "alex_boys30@yahoo.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "photo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-09-20T12:46:58.997Z",
+        "user": [
+            "alex_boys30@yahoo.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "photo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2018-09-20T12:48:32.215Z",
+        "user": [
+            "alex_boys30@yahoo.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "2",
+        "object_repr": "photo",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2018-09-20T12:49:03.774Z",
+        "user": [
+            "alex_boys30@yahoo.com"
+        ],
+        "content_type": [
+            "products",
+            "product"
+        ],
+        "object_id": "3",
+        "object_repr": "photo",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2018-09-20T13:06:44.518Z",
+        "user": [
+            "alex_boys30@yahoo.com"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "anisoarachifan@yahoo.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2018-09-21T21:22:10.170Z",
+        "user": [
+            "alex_boys30@yahoo.com"
+        ],
+        "content_type": [
+            "accounts",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "anisoarachifan@yahoo.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
