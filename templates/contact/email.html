@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+
+{% block content %}
+<body id="background" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+
+<h1 style="text-align:center;  color:white; font-family: 'Noto Serif KR', sans-serif; text-decoration:underline;">Contact Us</h1>
+<div class="container" id="email_cont">
+
+<form method="post" style="margin-left:auto; margin-right:auto">
+
+    {% csrf_token %}
+
+    {% for hidden in form.hidden_fields %}
+      {{ hidden }}
+    {% endfor %}
+
+    {% for field in form.visible_fields %}
+      <div class="form-group">
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {{ field|add_class:'form-control' }}
+        {% for error in field.errors %}
+          <span class="help-block">{{ error }}</span>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+<div class="form-group">
+      <button type="submit" class="btn btn-success">
+        <span class="glyphicon glyphicon-send"></span> Send
+      </button>
+      <a href="{% url 'home' %}" class="btn btn-default">Cancel</a>
+
+    </div>
+    {% if messages %}
+    {% for message in messages %}
+    <p id="alert_contact"{% if message.tags %} class="alert alert-success" {% endif %}>{{ message }}</p>
+    {% endfor %}
+{% endif %}
+
+</form>
+
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}

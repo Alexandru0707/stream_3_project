@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+<body id="background" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+
+    <form role="form" id="form_register" method="post" action="{% url 'register' %}">
+        <h1 style="color:white; font-family: 'Noto Serif KR', sans-serif; text-align:center; text-decoration:underline; margin-bottom:50px;">Create a new account</h1>
+        {% csrf_token %}
+        {{ form | as_bootstrap }}
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Create account</button>
+        </div>
+    </form>
+   <h3 style="text-align:center;color:white;"; >Already have an account? <a href="/login/" style="color: #dde9f1;">Log In</a></h3>
+
+
+{% endblock %}

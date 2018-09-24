@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+<div class="container">
+  <h2>Profile Details</h2>
+  <ul class="list-group" style="width:50%">
+    <li class="list-group-item">You are logged in as {{ user.email }}</li>
+    <li class="list-group-item">Your last login was:{{user.last_login}}</li>
+    <li class="list-group-item">Date joined:{{user.date_joined}}</li>
+      <li class="list-group-item">First Name:{{user.first_name}}</li>
+      <li class="list-group-item">Last Name:{{user.last_name}}</li>
+  </ul>
+</div>
+
+{% endblock %}
