@@ -2,7 +2,7 @@ from base import *
 
 DEBUG = True
 
-INSTALLED_APPS.append('')
+
 
 DATABASES = {
     'default': {
@@ -19,5 +19,5 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_mas6PxM1yX0PbOTnZfxFgMbP')
 
 # PayPal Settings
 SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL = 'https://cozma-alexandru-photography.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'alex_boys30@yahoo.com'

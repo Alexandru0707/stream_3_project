@@ -16,11 +16,11 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_mas6PxM1yX0PbOTnZfxFgMbP')
 
 # PayPal Settings
 
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL = 'https://cozma-alexandru-photography.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL = 'alex_boys30@yahoo.com'
 
-SITE_URL = 'https://your-heroku-app.herokuapp.com'
-ALLOWED_HOSTS.append('your-heroku-app.herokuapp.com')
+SITE_URL = 'https://cozma-alexandru-photography.herokuapp.com'
+ALLOWED_HOSTS.append('cozma-alexandru-photography.herokuapp.com')
 
 # Log DEBUG information to the console
 LOGGING = {
