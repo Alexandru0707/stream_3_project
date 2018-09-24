@@ -1,0 +1,61 @@
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 70% !important;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:70px;
+}
+
+.carousel-control.left {
+    background-image:none !important;
+}
+.carousel-control.right{
+    background-image:none !important;
+}
+.carousel-control {
+    color:black !important;
+}
+
+/* Carousel Fade effect........*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+#text_gallery > p {
+    font-size:15px;
+    text-align:center;
+    margin-top:30px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+.carousel {
+
+    width: 80% !important;
+    margin: auto;
+
+    bottom: 30px !important;
+}
+
+
+
+
+

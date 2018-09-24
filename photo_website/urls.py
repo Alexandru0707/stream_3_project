@@ -37,6 +37,8 @@ urlpatterns = [
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
 
     url('', include('contact.urls'))
+
+
 ]
 
 
