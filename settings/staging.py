@@ -10,8 +10,8 @@ DATABASES = {
 }
 
 # Stripe environment variables
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_AC799DLHoVLESzRQViBEKl1e')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_mas6PxM1yX0PbOTnZfxFgMbP')
+STRIPE_PUBLISHABLE = os.getenv('')
+STRIPE_SECRET = os.getenv('')
 
 
 # PayPal Settings
