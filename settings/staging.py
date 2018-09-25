@@ -1,6 +1,8 @@
 from base import *
 import dj_database_url
 import os
+if os.path.exists('env.py'):
+    import env
 
 
 DEBUG = False
@@ -18,7 +20,7 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 # PayPal Settings
 
 PAYPAL_NOTIFY_URL = 'https://cozma-alexandru-photography.herokuapp.com'
-PAYPAL_RECEIVER_EMAIL = os.getenv('PAYPAL_NOTIFY_URL')
+PAYPAL_RECEIVER_EMAIL = os.environ.get('PAYPAL_NOTIFY_URL')
 
 SITE_URL = 'https://cozma-alexandru-photography.herokuapp.com'
 ALLOWED_HOSTS.append('cozma-alexandru-photography.herokuapp.com')
