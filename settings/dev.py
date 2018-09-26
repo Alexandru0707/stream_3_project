@@ -1,7 +1,6 @@
 from base import *
-import os
-if os.path.exists('env.py'):
-    import env
+
+
 
 DEBUG = True
 

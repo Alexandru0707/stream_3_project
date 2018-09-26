@@ -4,7 +4,6 @@ import os
 if os.path.exists('env.py'):
     import env
 
-
 DEBUG = False
 
 # Load the ClearDB connection details from the environment variable
