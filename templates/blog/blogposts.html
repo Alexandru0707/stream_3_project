@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+ <body id="background-login" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+<div id="masthead">
+    <div class="container">
+        <div class="row">
+                <h1> Blog
+                    <p id="logo" class="lead">Cozma Alexandru Adrian</p>
+                </h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-body">
+    {% for post in posts %}
+        <div>
+            <div>
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.content|linebreaks }}</p>
+        </div>
+                </div>
+            </div>
+        </div>
+</div>
+    {% endfor %}
+{% endblock %}

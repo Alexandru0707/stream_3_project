@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^$', views.get_index, name='home'),
     url(r'^gallery/$', views.get_gallery),
     url(r'^products/$', product_views.all_products),
+    url(r'', include('blog.urls')),
     # accounts Authentication Url's
     url(r'^register/$', accounts_views.register, name='register'),
     url(r'^profile/$', accounts_views.profile, name='profile'),
@@ -39,6 +40,7 @@ urlpatterns = [
     url(r'^paypal-cancel', paypal_views.paypal_cancel),
 
     url('', include('contact.urls')),
+    url(r'', include('blog.urls')),
 
     # reset password ulr
 
