@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'products',
     'contact',
     'widget_tweaks',
+    'blog'
 
 ]
 
