@@ -15,7 +15,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 
 
 ALLOWED_HOSTS = []
-SITE_ID = 2
+SITE_ID = 1
 
 
 # Application definition
@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_forms_bootstrap',
+    'django.contrib.sites',
     'home',
     'accounts',
     'paypal.standard.ipn',
@@ -35,7 +36,8 @@ INSTALLED_APPS = [
     'products',
     'contact',
     'widget_tweaks',
-    'blog'
+    'blog',
+    'disqus'
 
 ]
 
@@ -135,3 +137,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+DISQUS_WEBSITE_SHORTNAME = os.getenv('DISQUES_KEY', 'Optional default value')
+
