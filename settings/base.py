@@ -140,3 +140,4 @@ STATICFILES_DIRS = (
 
 DISQUS_WEBSITE_SHORTNAME = os.getenv('DISQUS_KEY', 'Optional default value')
 
+DISQUS_API_KEY = os.getenv('DISQUS_API', 'Optional default value')
