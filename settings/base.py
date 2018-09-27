@@ -138,5 +138,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-DISQUS_WEBSITE_SHORTNAME = os.getenv('DISQUES_KEY', 'Optional default value')
+DISQUS_WEBSITE_SHORTNAME = os.getenv('DISQUS_KEY', 'Optional default value')
 
