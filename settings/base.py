@@ -15,7 +15,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 
 
 ALLOWED_HOSTS = []
-SITE_ID = 2
+SITE_ID = 1
 
 
 # Application definition
