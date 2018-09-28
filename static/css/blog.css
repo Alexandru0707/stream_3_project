@@ -114,4 +114,6 @@ a, a:hover {
 
     margin-top:40px;
 }
-
+.col-md-10{
+    width:100% !important;
+}
