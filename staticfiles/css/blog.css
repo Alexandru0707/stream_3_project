@@ -124,4 +124,9 @@ a, a:hover {
     width:100% !important;
 }
 
+#layout{
+    background-color:white !important;
+    border-radius:10px !important
+}
+
 
