@@ -26,7 +26,7 @@
                         <p><button class="btn btn-default" onclick="location.href='/blog'">Back To Blog</button></p>
                         <p style="color:white"><strong>Created by:</strong>{{user.first_name}} |  <strong>Date:</strong>{{ post.published_date }}<br> <strong>Views:</strong> {{ post.views }} | <strong>Tag</strong> {{ post.tag }}
 </p>
-                        <div id="disqus_cont" style="background-color:white;">
+                        <div id="disqus_cont" style="background-color:white; border-radius:10px;">
                         {% load disqus_tags %}
                         {% set_disqus_title post.title %}
                         {% disqus_show_comments %}
