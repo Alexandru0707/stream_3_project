@@ -17,9 +17,21 @@
 
 <div class="row" style="background-color:#0a0a0a80; border-radius: 10px; width:90%; margin: 30px auto 90px auto;">
 
+   <div class="col-xs-12 ">
+
+      {% if post.image %}
+
+          <img src="/media/{{ post.image}}" class="center-block">
+
+      {% endif %}
+       </div>
+
+
+
 
             <div class="col-md-12" style="width:100%">
                 <h2 style="margin-bottom:20px;">{{ post.title }}</h2>
+
                 <div class="row">
                     <div class="col-md-10">
                         <p style="color:white">{{ post.content }}</p>
@@ -35,6 +47,7 @@
                 </div>
             </div>
         </div>
+</div>
 
 
 
