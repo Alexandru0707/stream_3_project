@@ -40,6 +40,7 @@ $(window).on('load', function () {
       $(".spinner-wrapper").hide();
       $("footer").fadeIn(3000);
       $(".navbar-default").fadeIn(3000);
+      $(".site-wrapper").fadeIn(3000);
 
 
 
