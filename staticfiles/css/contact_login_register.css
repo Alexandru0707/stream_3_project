@@ -1,40 +1,23 @@
 .form-group{
-    width:50%;
-    margin:auto;
-    font-family: 'Noto Serif KR', sans-serif
+    margin:10px 20px 10px 20px;
+    color:white;
 
 }
-#email_cont > label{
-    color:white;
+
+@media (min-width: 600px) {
+
+    .form-group {
+        width:50%;
+        margin:auto;
+
+    }
 }
-label{
-    color:white;
-}
+
 .help-block {
     color: #e08888 !important;
 }
 #alert_contact{
     width:50%;
     margin:auto;
-}
-
-
-/*register......*/
-
-#form_register{
-    margin-top:70px;
-    width:70%;
-    margin-left:auto;
-    margin-right:auto;
-
-}
-
-/*login......*/
-
-#login_form{
-
-    margin:auto;
-    margin-top:70px;
-    width:70%;
 }
 
