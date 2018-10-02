@@ -41,6 +41,7 @@
        background-position:  bottom left;
            height:100%;
 
+
             }
     </style>
     {% endblock %}
@@ -82,8 +83,15 @@
 </div>
     </header>
 
-
-<div class="site-wrapper" id="empty_div" style="display:none">
+<div class="spinner-wrapper">
+  <div class="spinner">
+    <span class="fragment"></span>
+    <span class="fragment"></span>
+    <span class="fragment"></span>
+    loading
+  </div>
+</div>
+<div class="site-wrapper" id="empty_div" style="display:none;">
         {% block content %}
 
 
