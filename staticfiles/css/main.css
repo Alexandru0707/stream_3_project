@@ -5,6 +5,11 @@
         background-size: 100%;
     }
 }
+@media (max-width: 768px) {
+    #bg{
+        background-size:auto;
+    }
+}
 
 .navbar-default{
     background:black !important;
