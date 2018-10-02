@@ -26,6 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     {% endblock %}
     {% block css %}
@@ -39,6 +40,7 @@
        background-repeat: repeat;
        background-position:  bottom left;
            height:100%;
+
             }
     </style>
     {% endblock %}
@@ -49,7 +51,7 @@
 <header>
 
 <div id="navbar">
-<nav class="navbar-default navbar-static">
+<nav class="navbar-default navbar-static" style="display:none;">
 		<div class="container">
              <div class="masthead">
 		  <div class="navbar-header">
@@ -83,11 +85,16 @@
 
 <div class="site-wrapper" id="empty_div">
         {% block content %}
+
+
+</div>
         {% endblock %}
 </div>
 
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
-<footer>
+
+<footer style="display:none;">
         <hr style="color:white; width:70%">
         <h4 style="color:white; text-align:center; font-family: 'Noto Serif KR', sans-serif;" >Created by Alexandru Cozma</h4>
         <div id="icons">

@@ -5,11 +5,13 @@
 <div class="container">
   <h2>Profile Details</h2>
   <ul class="list-group" style="width:50%">
-    <li class="list-group-item">You are logged in as {{ user.email }}</li>
-    <li class="list-group-item">Your last login was:{{user.last_login}}</li>
-    <li class="list-group-item">Date joined:{{user.date_joined}}</li>
-      <li class="list-group-item">First Name:{{user.first_name}}</li>
-      <li class="list-group-item">Last Name:{{user.last_name}}</li>
+    <li class="list-group-item">You Are Logged In As <strong> {{ user.email }}</strong></li>
+    <li class="list-group-item">Your Last Login was:<strong>{{user.last_login}}</strong></li>
+    <li class="list-group-item">Date Joined:<strong>{{user.date_joined}}</strong></li>
+    <li class="list-group-item">First Name:<strong>{{user.first_name}}</strong></li>
+    <li class="list-group-item">Last Name:<strong>{{user.last_name}}</strong></li>
+    <li class="list-group-item">Is SuperUser:<strong>{{user.is_superuser}}</strong></li>
+    <li class="list-group-item">Is Active:<strong>{{user.is_active}}</strong></li>
   </ul>
 </div>
 

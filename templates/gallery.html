@@ -6,17 +6,22 @@
 {% endblock %}
 
 {% block content %}
- <body id="background-login" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
-<body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+
+<div class="spinner-wrapper">
+  <div class="spinner">
+    <span class="fragment"></span>
+    <span class="fragment"></span>
+    <span class="fragment"></span>
+    loading
+  </div>
+</div>
+
+<body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}');";>
 <div class="gallery_cont">
-
-
-
-
 </div>
 
 
-<div class = "bg_gallery">
+<div class = "bg_gallery" style="display:none;">
 
 <a href="{% static 'media/1.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/1.jpg'%}" alt="" class="img_fancybox"/>
@@ -122,15 +127,6 @@
 	<img src="{% static 'media/37.jpg'%}" alt="" class="img_fancybox" />
 </a>
 
-
-
-
-
 </div>
-
-
-
-
-
 
 {% endblock %}
