@@ -2,15 +2,28 @@
 {% load widget_tweaks %}
 {% load bootstrap_tags %}
 {% load staticfiles %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/footer_css.css' %}" type="text/css" />
+{% endblock %}
 
 {% block content %}
 <body id="background" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+<h1 style="text-align:center; color:white; font-family: 'K2D', sans-serif;">Contact</h1>
+<hr style="width:70%;">
+<h4 style="text-align:center; color:white; font-family: 'K2D', sans-serif;">FOR GENERAL ENQUIRIES/PRESS - Please use the contact form below.</h4>
+
+<div class="container" id="info_contact"  style="background-color:#ffffffd4; width:80%; margin-bottom:20px;
+ border-radius:10px; text-align:center;">
+    <h5 class="contact_details" style="color:#d5242a;">Tel*<br>0894414459</h5>
+    <h5 class="contact_details" style="color:black;">E-mail*<br>alex_boys30@yahoo.com</h5>
+    <h5 class="contact_details" style="color:black;">Adress*<br>29 Norfolk Road,Phibsboro,<br>Dublin 7</h5>
+
+</div>
 
 
-<h1 style="text-align:center;  color:white; ">Contact Us</h1>
+<div class="container" id="email_cont" style=" background-color:#2f2f2f;  box-shadow: -43px 6px 112px -13px rgba(0,0,0,0.69); border-radius:10px;  width:80%; ">
 
-
-<form method="post">
+<form method="post" style="margin-left:auto; margin-right:auto; margin-top:10px;">
 
     {% csrf_token %}
 
@@ -29,24 +42,26 @@
     {% endfor %}
 
 <div class="form-group">
-      <button type="submit" class="btn btn-success">
+      <button type="submit" class="btn btn-default">
         <span class="glyphicon glyphicon-send"></span> Send
       </button>
-      <a href="{% url 'home' %}" class="btn btn-default">Cancel</a>
+      <a href="{% url 'home' %}" class="btn btn-danger">Cancel</a>
 
     </div>
-    {% if messages %}
-    {% for message in messages %}
-    <p id="alert_contact"{% if message.tags %} class="alert alert-success" {% endif %}>{{ message }}</p>
-    {% endfor %}
-{% endif %}
+
 
 </form>
 
 
 
 
+</div>
 
+ {% if messages %}
+    {% for message in messages %}
+    <p id="alert_contact"{% if message.tags %} class="alert alert-success" {% endif %}>{{ message }}</p>
+    {% endfor %}
+{% endif %}
 
 
 

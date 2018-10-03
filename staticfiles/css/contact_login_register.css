@@ -1,23 +1,108 @@
 .form-group{
-    margin:10px 20px 10px 20px;
+    margin:auto;
+}
+#email_cont > label{
     color:white;
-
 }
-
-@media (min-width: 600px) {
-
-    .form-group {
-        width:50%;
-        margin:auto;
-
-    }
+label{
+    color:white;
 }
-
 .help-block {
     color: #e08888 !important;
 }
 #alert_contact{
     width:50%;
     margin:auto;
+}
+
+
+/*register......*/
+
+#form_register{
+    margin-top:70px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+}
+
+/*login......*/
+
+#login_form{
+    width:50%;
+}
+
+
+/* contact */
+.contact_details{
+    margin-top:30px;
+    font-family: 'K2D', sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
+/* media queries ....*/
+@media (min-width: 656px) {
+    #email_cont {
+        min-width: 150px !important;
+        max-width: 320px !important;
+
+        background-color: #2f2f2f;
+        position: relative;
+        left: 150px;
+        bottom: 170px;
+        box-shadow: -43px 6px 112px -13px rgba(0, 0, 0, 0.69);
+        border-radius: 10px;
+
+    }
+    #info_contact{
+        min-width:600px !important;
+        max-width:700px !important;
+        height:40%;
+        position:relative;
+        top:130px;
+        text-align:left !important;
+
+
+
+    }
+
+    #register_form {
+        min-width: 150px !important;
+        max-width: 320px !important;
+
+        background-color: #2f2f2f;
+        position: relative;
+        right: 150px;
+        bottom: 100px;
+        box-shadow: -43px 6px 112px -13px rgba(0, 0, 0, 0.69);
+        border-radius: 10px;
+
+    }
+
+    #text_register {
+        min-width: 600px !important;
+        max-width: 700px !important;
+        height: 40%;
+        position: relative;
+        top: 130px;
+        height:150px;
+
+    }
+    .forgo_password{
+    text-align:right !important;
+
+    margin-top:55px;
+}
+    #login_form{
+        width:40% !important;
+    }
+}
+
+@media (max-width: 600px){
+    .form-group{
+        width:100%;
+    }
 }
 
