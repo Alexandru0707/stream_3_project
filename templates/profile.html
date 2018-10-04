@@ -2,17 +2,18 @@
 {% load staticfiles %}
 {% block content %}
 <body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
-<div class="container">
+<div class="container" style="width:50%;">
   <h2>Profile Details</h2>
-  <ul class="list-group" style="width:50%">
-    <li class="list-group-item">You Are Logged In As <strong> {{ user.email }}</strong></li>
-    <li class="list-group-item">Your Last Login was:<strong>{{user.last_login}}</strong></li>
-    <li class="list-group-item">Date Joined:<strong>{{user.date_joined}}</strong></li>
-    <li class="list-group-item">First Name:<strong>{{user.first_name}}</strong></li>
-    <li class="list-group-item">Last Name:<strong>{{user.last_name}}</strong></li>
-    <li class="list-group-item">Is SuperUser:<strong>{{user.is_superuser}}</strong></li>
-    <li class="list-group-item">Is Active:<strong>{{user.is_active}}</strong></li>
+  <ul class="list-group" >
+    <li class="list-group-item">You Are Logged In As*<br> <strong> {{ user.email }}</strong></li>
+    <li class="list-group-item">Your Last Login was*<br><strong>{{user.last_login}}</strong></li>
+    <li class="list-group-item">Date Joined*<br><strong>{{user.date_joined}}</strong></li>
+    <li class="list-group-item">First Name*<br><strong>{{user.first_name}}</strong></li>
+    <li class="list-group-item">Last Name*<br><strong>{{user.last_name}}</strong></li>
+    <li class="list-group-item">Is SuperUser*<br><strong>{{user.is_superuser}}</strong></li>
+
   </ul>
 </div>
+
 
 {% endblock %}

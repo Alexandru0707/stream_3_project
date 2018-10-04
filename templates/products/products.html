@@ -2,24 +2,23 @@
 {% block content %}
 {% load staticfiles %}
 <body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Purchase</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for product in products %}
-                <tr>
-                    <td>{{ product.name }}</td>
-                    <td>{{ product.description }}</td>
-                    <td>${{ product.price }}</td>
-                    <td>{{ product.paypal_form.sandbox }}</td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <div class="row row-flex">
+    {% for product in products %}
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+
+        <div class="panel-body">
+
+
+            <h3>{{ product.name }}</h3>
+            <p class="product-description">{{ product.description }}</p>
+            <p>{{ product.price }}</p>
+            <p>{{ product.paypal_form.sandbox }}</p>
+
+
+
+            </div>
+    </div>
+    {% endfor %}
+</div>>
 {% endblock %}

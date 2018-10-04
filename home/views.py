@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 
 def get_index(request):
-   return render(request, 'base.html')
+   return render(request, 'home.html')
 
 
 @login_required(login_url='/login/')

@@ -175,7 +175,36 @@
   }
 }
 
+.logo{
+     position:relative;
+     top:275px;
+     font-family: 'Prata', serif;
+     color:white;
 
+
+ }
+ @media (max-width: 931px){
+     .logo {
+         top:135px;
+     }
+     .logo{
+         text-align:center;
+         margin-left:0px !important;
+         background-color:black;
+         opacity:0.8;
+     }
+
+
+ }
+
+@media (max-width: 420px){
+    .logo{
+        font-size:30px;
+        background-color:black;
+        opacity:0.8;
+
+    }
+}
 
 
 
