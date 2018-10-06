@@ -8,7 +8,7 @@
 
 <div class="container" id="login_form" style=" background-color:#2f2f2f;  box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75); border-radius:10px;  width:90%; ">
 
-    <form role="form"  method="post" action="{% url 'login' %}" style="margin-top:10px;">
+    <form role="form"  method="post" action="{% url 'login' %}?next={{ next }}" style="margin-top:10px;">
 
         {% csrf_token %}
         {{ form| as_bootstrap }}

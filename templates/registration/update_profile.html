@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load staticfiles %}
+{% block content %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/footer_css.css' %}" type="text/css" />
+{% endblock %}
+
+<body id="background" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+<h1 style="color:white; text-align:center;  margin-bottom:50px;">Update Profile</h1>
+<hr style="width:70%;">
+<div class="container" id="text_register"  style="background-color:#ffffffd4; width:80%; margin-bottom:20px;
+ border-radius:10px; ">
+    <h4 class="forgo_password" style="color:black;  text-align:center; "> <a href="/login/" style="color: #d5242a;">*LOG IN</a></h4>
+
+</div>
+<div class="container" id="register_form" style=" background-color:#2f2f2f;  box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75); border-radius:10px;  width:80%; ">
+    <form method="post" style="margin-top:10px; margin-bottom:10px;">
+    {% csrf_token %}
+
+    <label for="first_name">First Name </label>
+    <input style="margin-bottom: 1em;" id="first_name" class="form-control" type="text" maxlength="25" name="first_name" value="{{ user.first_name }}"><br>
+    <label for="last_name">Last Name </label>
+    <input style=" margin-bottom: 1em;" id="last_name" class="form-control" type="text" maxlength="25" name="last_name" value="{{ user.last_name }}"><br>
+    <label for="email">E-Mail </label>
+    <input style="margin-bottom: 1em;" id="email" class="form-control" type="email" maxlength="50" required=True unique=True name="email" value="{{ user.email }}"><br>
+
+    <button class="btn btn-default" type="submit">Submit</button>
+
+    {% if form.errors %}
+      <p style="margin-left: 5em;" class=" label label-danger">
+          Please enter a valid e-mail adress.
+      </p>
+    {% endif %}
+</form>
+
+
+</div>
+
+
+
+{% endblock %}

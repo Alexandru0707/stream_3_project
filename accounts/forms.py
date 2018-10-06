@@ -1,6 +1,6 @@
 
 from django import forms
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from accounts.models import User
 from django.core.exceptions import ValidationError
 
@@ -21,6 +21,14 @@ class UserRegistrationForm(UserCreationForm):
         model = User
         fields = ['first_name', 'last_name', 'email', 'password1', 'password2', ]
         exclude = ['username']
+
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        username = self.cleaned_data.get('username')
+        if User.objects.filter(email=email).exclude(username=username):
+            raise forms.ValidationError(u'Email addresses must be unique.')
+        return email
 
     def clean_password2(self):
         password1 = self.cleaned_data.get('password1')
@@ -47,3 +55,17 @@ class UserRegistrationForm(UserCreationForm):
 class UserLoginForm(forms.Form):
     email = forms.EmailField()
     password = forms.CharField(widget=forms.PasswordInput)
+
+
+class EditProfileForm(UserChangeForm):
+
+    class Meta:
+        model = User
+
+        fields = [
+            'first_name',
+            'last_name',
+            'email',
+            'password'
+        ]
+        exclude = ['username']

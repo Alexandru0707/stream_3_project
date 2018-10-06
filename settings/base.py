@@ -1,5 +1,5 @@
 import os
-
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -14,8 +14,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = []
-SITE_ID = 1
+ALLOWED_HOSTS = ['cozma-alexandru-photography.herokuapp.com', 'localhost', '127.0.0.1']
+
+SITE_ID = 2
+
 
 
 # Application definition
@@ -84,6 +86,14 @@ DATABASES = {
     }
 }
 
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
+
 AUTH_USER_MODEL = 'accounts.User'
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
@@ -142,5 +152,14 @@ DISQUS_WEBSITE_SHORTNAME = os.getenv('DISQUS_KEY', 'Optional default value')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST', 'Optional default value')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PAS', 'Optional default value')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = os.getenv('FROM_EMAIL', 'Oprional default value')
+ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Contact email received from my website'
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 
