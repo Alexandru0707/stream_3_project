@@ -154,11 +154,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PAS')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PAS')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = os.getenv('FROM_EMAIL')
+DEFAULT_FROM_EMAIL = os.environ.get('FROM_EMAIL')
 ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Contact email received from my website'
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
