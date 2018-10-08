@@ -106,5 +106,19 @@ label{
     }
 }
 
+#rst_pass_confirm{
+    margin:50px auto 50px auto;
+}
 
+
+@media (min-width: 400px){
+#rst_pass{
+    width:400px !important;
+    margin:auto;
+
+}
+    #rst_pass_confirm{
+        width:400px !important;
+    }
+}
 
