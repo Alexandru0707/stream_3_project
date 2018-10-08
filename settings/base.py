@@ -16,7 +16,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 
 ALLOWED_HOSTS = ['cozma-alexandru-photography.herokuapp.com', 'localhost', '127.0.0.1']
 
-SITE_ID = 2
+SITE_ID = 3
 
 
 
