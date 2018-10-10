@@ -1,21 +1,10 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
 
 {% block content %}
-
-<div class="spinner-wrapper">
-  <div class="spinner">
-    <span class="fragment"></span>
-    <span class="fragment"></span>
-    <span class="fragment"></span>
-    loading
-  </div>
-</div>
-
 <body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}');";>
 <div class="gallery_cont">
 </div>
@@ -39,7 +28,6 @@
 <a href="{% static 'media/5.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/5.jpg'%}" alt="" class="img_fancybox"/>
 </a>
-
 <a href="{% static 'media/7.jpg'%}"   data-fancybox="gallery"  >
 	<img src="{% static 'media/7.jpg'%}" alt=""  class="img_fancybox" />
 </a>
@@ -61,18 +49,15 @@
 <a href="{% static 'media/13.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/13.jpg'%}" alt="" class="img_fancybox"/>
 </a>
-
 <a href="{% static 'media/15.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/18.jpg'%}" alt="" class="img_fancybox"/>
 </a>
 <a href="{% static 'media/16.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/16.jpg'%}" alt="" class="img_fancybox"/>
 </a>
-
 <a href="{% static 'media/18.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/18.jpg'%}" alt="" class="img_fancybox"/>
 </a>
-
 <a href="{% static 'media/20.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/20.jpg'%}" alt="" class="img_fancybox"/>
 </a>
@@ -88,7 +73,6 @@
 <a href="{% static 'media/24.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/24.jpg'%}" alt="" class="img_fancybox"/>
 </a>
-
 <a href="{% static 'media/25.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/25.jpg'%}" alt="" class="img_fancybox" />
 </a>
@@ -98,7 +82,6 @@
 <a href="{% static 'media/27.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/27.jpg'%}" alt="" class="img_fancybox"/>
 </a>
-
 <a href="{% static 'media/29.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/29.jpg'%}" alt="" class="img_fancybox"/>
 </a>
@@ -126,7 +109,6 @@
 <a href="{% static 'media/37.jpg'%}" data-fancybox="gallery"  >
 	<img src="{% static 'media/37.jpg'%}" alt="" class="img_fancybox" />
 </a>
-
 </div>
 
 {% endblock %}

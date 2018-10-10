@@ -24,9 +24,7 @@
 <div class="container" id="email_cont" style=" background-color:#2f2f2f;  box-shadow: -43px 6px 112px -13px rgba(0,0,0,0.69); border-radius:10px;  width:80%; ">
 
 <form method="post" style="margin-left:auto; margin-right:auto; margin-top:10px;">
-
     {% csrf_token %}
-
     {% for hidden in form.hidden_fields %}
       {{ hidden }}
     {% endfor %}
@@ -46,26 +44,8 @@
         <span class="glyphicon glyphicon-send"></span> Send
       </button>
       <a href="{% url 'home' %}" class="btn btn-danger">Cancel</a>
-
     </div>
-
-
 </form>
-
-
-
-
 </div>
-
- {% if messages %}
-    {% for message in messages %}
-    <p id="alert_contact"{% if message.tags %} class="alert alert-success" {% endif %}>{{ message }}</p>
-    {% endfor %}
-{% endif %}
-
-
-
-
-
 
 {% endblock %}

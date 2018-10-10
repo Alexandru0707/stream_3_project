@@ -23,7 +23,6 @@ label{
     width:50%;
     margin-left:auto;
     margin-right:auto;
-
     border-radius:10px;
 
 }
@@ -32,6 +31,9 @@ label{
 
 #login_form{
     width:50%;
+}
+#rst_pass_confirm{
+    margin:50px auto 50px auto;
 }
 
 
@@ -46,26 +48,23 @@ label{
 .contact_details{
     margin-top:30px;
     font-family: 'K2D', sans-serif;
-
     margin-bottom: 30px;
-
-
 }
 
+/* media queries....*/
 
 @media (min-width: 656px) {
     #email_cont {
         min-width: 150px !important;
         max-width: 320px !important;
-
         background-color: #2f2f2f;
         position: relative;
         left: 150px;
         bottom: 170px;
         box-shadow: -43px 6px 112px -13px rgba(0, 0, 0, 0.69);
         border-radius: 10px;
-
     }
+
     #info_contact{
         min-width:600px !important;
         max-width:700px !important;
@@ -73,15 +72,11 @@ label{
         position:relative;
         top:130px;
         text-align:left !important;
-
-
-
     }
 
     #register_form {
         min-width: 150px !important;
         max-width: 320px !important;
-
         background-color: #2f2f2f;
         position: relative;
         right: 150px;
@@ -94,33 +89,28 @@ label{
     #text_register {
         min-width: 600px !important;
         max-width: 700px !important;
-        height: 40%;
         position: relative;
         top: 130px;
         height:150px;
 
     }
-    .forgo_password{
-    text-align:right !important;
 
-    margin-top:55px;
-}
+    .forgo_password{
+        text-align:right !important;
+        margin-top:55px;
+    }
     #login_form{
         width:40% !important;
     }
 }
 
-#rst_pass_confirm{
-    margin:50px auto 50px auto;
-}
-
 
 @media (min-width: 400px){
-#rst_pass{
-    width:400px !important;
-    margin:auto;
+    #rst_pass{
+        width:400px !important;
+        margin:auto;
 
-}
+    }
     #rst_pass_confirm{
         width:400px !important;
     }

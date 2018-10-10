@@ -3,7 +3,7 @@
 {% load staticfiles %}
 {% block content %}
 {% block css %}
-    <link rel="stylesheet" href="{% static 'css/footer_css.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
 
 <body id="background" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
@@ -12,11 +12,9 @@
 <div class="container" id="text_register"  style="background-color:#ffffffd4; width:80%; margin-bottom:20px;
  border-radius:10px; ">
     <h4 class="forgo_password" style="color:black; font-family: 'K2D', sans-serif; text-align:center; ">Already have an account?<br> <a href="/login/" style="color: #d5242a;">*LOG IN*</a></h4>
-
 </div>
 <div class="container" id="register_form" style=" background-color:#2f2f2f;  box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75); border-radius:10px;  width:80%; ">
     <form role="form"  method="post" action="{% url 'register' %}">
-
         {% csrf_token %}
         {{ form | as_bootstrap }}
         <div class="form-group">
@@ -24,7 +22,5 @@
         </div>
     </form>
 </div>
-
-
 
 {% endblock %}

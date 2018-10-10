@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
 
-
-
-
     {% for item in cart_items %}
 <div class="container">
   <div class="row" style="margin-bottom:70px;">
@@ -22,23 +19,19 @@
 
 <div class="col-md-4">
     <div class="product_details">
-            <h2 style="margin-bottom:20px;">{{ item.product.name }}</h2>
+            <h2 style="margin-bottom:20px; color:black;">{{ item.product.name }}</h2>
             <p class="product-description">{{ item.product.description }}</p>
             <p> € {{ item.product.price }}</p>
-                <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-            {% csrf_token %}
-            <div class="form-group">
 
-                <div class="input-group">
-                    <input type="submit" class="btn btn-default" name="quantity" value="Remove" >
-                </div>
-                </div>
-                </form>
+        <form method="post" action="{%  url 'adjust_cart' item.id %}">
+            {% csrf_token %}
+                <input type="submit" class="btn btn-default"  value="remove">
+        </form>
         <hr>
-</div>
+    </div>
 </div>
   </div>
-   </div>
+</div>
 
 
 

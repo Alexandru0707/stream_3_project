@@ -7,9 +7,7 @@
 <h1 style="color:white;  font-family: 'K2D', sans-serif;, sans-serif; text-align:center;  margin-bottom:50px;">Log In</h1>
 
 <div class="container" id="login_form" style=" background-color:#2f2f2f;  box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75); border-radius:10px;  width:90%; ">
-
     <form role="form"  method="post" action="{% url 'login' %}?next={{ next }}" style="margin-top:10px;">
-
         {% csrf_token %}
         {{ form| as_bootstrap }}
         <div class="form-group">
@@ -17,9 +15,8 @@
         </div>
     </form>
 </div>
+
 <h3 style="text-align:center;color:white; margin-top:70px;" >Don't have an account? <a href="/register/" style="color: #d5242a;">Register</a></h3>
-
-
 <h3 style="text-align:center;color:white; margin-top:50px;" >Forgot your password? <a href="/password_reset/" style="color: #d5242a;">Click here!</a></h3>
 
 {% endblock %}
