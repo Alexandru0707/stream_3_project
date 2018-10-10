@@ -33,7 +33,7 @@ def register(request):
     args = {'form': form}
     args.update(csrf(request))
 
-    return render(request, 'Registration/register.html', args)
+    return render(request, 'registration/register.html', args)
 
 
 @login_required(login_url='/login/')
