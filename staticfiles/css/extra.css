@@ -1,6 +1,8 @@
 
 #empty_div{
 	height:auto;
+
+
 }
 
 @media (max-width: 1326px){
@@ -12,10 +14,5 @@
     }
 }
 
-@media (max-width: 553px){
 
-    #empty_div{
-        margin-top:80px;
-    }
-}
 

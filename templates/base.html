@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
@@ -49,6 +50,8 @@
             }
     </style>
     {% endblock %}
+    {% block head_js %}
+    {% endblock head_js %}
 
 
 </head>
@@ -81,6 +84,14 @@
                  <li><a href="{% url 'register' %}">Register</a></li>
                  <li><a href="{% url 'login' %}">Log In</a></li>
                 {% endif %}
+
+                <a href="{% url 'view_cart' %}">
+                    {% if product_count > 0 %}
+                    <i class="fa fa-shopping-cart"></i>
+
+                    <label class="badge badge-warning">{{ total }}<span class="glyphicon glyphicon-eur"></span></label>
+                    {% endif %}
+                </a>
 			  </ul>
 		  </div>
 </nav>

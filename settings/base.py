@@ -33,13 +33,13 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'home',
     'accounts',
-    'paypal.standard.ipn',
-    'paypal_store',
     'products',
     'contact',
     'widget_tweaks',
     'blog',
-    'disqus'
+    'disqus',
+    'checkout',
+    'cart'
 
 ]
 
@@ -68,6 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.contexts.cart_contents',
             ],
         },
     },

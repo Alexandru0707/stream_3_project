@@ -33,12 +33,12 @@ def register(request):
     args = {'form': form}
     args.update(csrf(request))
 
-    return render(request, 'registration/register.html', args)
+    return render(request, 'Registration/register.html', args)
 
 
 @login_required(login_url='/login/')
 def profile(request):
-    return render(request, 'registration/profile.html')
+    return render(request, 'Registration/profile.html')
 
 
 def login(request):
@@ -65,7 +65,7 @@ def login(request):
 
     args = {'form': form, 'next': request.GET.get('next', '')}
     args.update(csrf(request))
-    return render(request, 'registration/login.html', args)
+    return render(request, 'Registration/login.html', args)
 
 
 def logout(request):
@@ -88,4 +88,4 @@ def update_profile(request):
     args = {'form': form}
     args.update(csrf(request))
 
-    return render(request, 'registration/update_profile.html', args)
+    return render(request, 'Registration/update_profile.html', args)

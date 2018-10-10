@@ -17,30 +17,30 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from accounts import views as accounts_views
 from home import views
-from paypal.standard.ipn import urls as paypal_urls
-from paypal_store import views as paypal_views
+
 from products import views as product_views
 from django.contrib.auth import views as auth_views
 from django.views.static import serve
 from settings.base import MEDIA_ROOT
+from cart import urls as urls_cart
+from checkout import urls as urls_checkout
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.get_index, name='home'),
     url(r'^gallery/$', views.get_gallery),
-    url(r'^products/$', product_views.all_products),
+    url(r'^products/$', product_views.all_products, name='products'),
     url(r'', include('blog.urls')),
+    url(r'^cart/', include(urls_cart)),
+    url(r'^checkout/', include(urls_checkout)),
     # accounts Authentication Url's
     url(r'^register/$', accounts_views.register, name='register'),
     url(r'^profile/$', accounts_views.profile, name='profile'),
     url(r'^login/$', accounts_views.login, name='login'),
     url(r'^logout/$', accounts_views.logout, name='logout'),
     url(r'^profile_update', accounts_views.update_profile, name='profile_edit'),
-    #paypall url's
 
-    url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
-    url(r'^paypal-return', paypal_views.paypal_return),
-    url(r'^paypal-cancel', paypal_views.paypal_cancel),
+
 
     url('', include('contact.urls')),
     url(r'', include('blog.urls')),
