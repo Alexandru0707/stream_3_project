@@ -2,8 +2,10 @@
 {% load staticfiles %}
 {% block content %}
 <body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+
 <div class="container" id="profile_list">
   <h2 style="text-align:center; color:white;">Profile Details</h2>
+  <hr>
   <ul class="list-group" >
     <li class="list-group-item">You Are Logged In As*<br> <strong> {{ user.email }}</strong></li>
     <li class="list-group-item">Your Last Login was*<br><strong>{{user.last_login}}</strong></li>

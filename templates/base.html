@@ -37,8 +37,9 @@
         body {
             background-image:url( 'static/media/IMG_0923-2.jpg' );
             background-size: cover;
-            background-repeat: repeat;
+            background-repeat: no-repeat;
             background-position: right center;
+            background-attachment: fixed;
             height: 100%;
             }
     </style>
@@ -113,15 +114,9 @@
 
 <a href="javascript:" id="return-to-top"><i class=" fa fa-chevron-up"></i></a>
 
-<footer style="display:none;">
-        <hr style="color:white; width:70%">
-        <h4 style="color:white; text-align:center; font-family: 'Noto Serif KR', sans-serif;" >Created by Alexandru Cozma</h4>
-        <div id="icons">
-        <a href="https://www.facebook.com/cozma.alexandru.754"><img src="{% static 'media/facebook-2-24.ico'%}" alt=""></a>
-        <a href="https://www.instagram.com/alexandru_0707/"><img src="{% static 'media/instagram-24.ico'%}" alt="" style="margin-left:60px; margin-right:60px"></a>
-        <a href="https://github.com/Alexandru0707"><img src="{% static 'media/github-24.ico'%}" alt=""></a>
-</div>
-</footer>
+{% block footer %}
+{% include 'footer.html' %}
+{% endblock %}
 
 
 <script src="{% static 'js/main.js' %}"></script>

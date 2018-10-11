@@ -36,7 +36,5 @@ $(window).on('load', function () {
       $(".navbar-default").fadeIn(3000);
       $(".site-wrapper").fadeIn(3000);
       $(".alert").fadeOut(9000);
-
-
-
  });
+

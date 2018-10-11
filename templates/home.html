@@ -1,6 +1,71 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
+
+<style>
+    .paralax{
+
+
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        margin-top:-20px;
+}
+</style>
+
+
+
     <h1 class="logo" style=" margin-left:10px; margin-bottom:0px;">COZMA ALEXANDRU</h1>
-    <h2 class="logo" style="margin-left:300px;  margin-top:0px;">Photography</h2>
+    <h2 class="logo" style="margin-left:300px;  margin-top:0px; margin-bottom:550px;">Photography</h2>
+
+
+
+
+<div class="white_field">
+    <div class="text-paralax">
+        <h3>Hello!!</h3>
+        <p>A quick introduction!<br>
+        My name is Alexandru Cozma,i'm from Romania but I actually live in Dublin<br>
+            -Keep scrolling-</p>
+    </div>
+</div>
+<div class="paralax" style="background-image:url('static/media/paralax_1.jpg');">
+</div>
+<div class="white_field">
+    <div class="text-paralax">
+        <br>
+        <p>
+        Passionate about coding,photography and painting<br><br>
+            -Keep scrolling-</p>
+    </div>
+</div>
+<div class="paralax" style="background-image:url('static/media/paralax_2.jpg');">
+</div>
+<div class="white_field">
+    <div class="text-paralax">
+        <h3>That's all!!</h3>
+        <p>Probably this is the shortest introduction which you ever seen.<br>
+        If you'd like to see more pictures<br><a href="/gallery/" style="color:red;"> Click here</a></p>
+    </div>
+</div>
+<div class="paralax" style="background-image:url('static/media/paralax_3.jpg');">
+    <div class="empty" style="height:480px;"></div>
+    <footer style="display:none;">
+        <hr style="color:white; width:70%">
+        <h4 style="color:white; text-align:center; font-family: 'Noto Serif KR', sans-serif;" >Created by Alexandru Cozma</h4>
+        <div id="icons">
+        <a href="https://www.facebook.com/cozma.alexandru.754"><img src="{% static 'media/facebook-2-24.ico'%}" alt=""></a>
+        <a href="https://www.instagram.com/alexandru_0707/"><img src="{% static 'media/instagram-24.ico'%}" alt="" style="margin-left:60px; margin-right:60px"></a>
+        <a href="https://github.com/Alexandru0707"><img src="{% static 'media/github-24.ico'%}" alt=""></a>
+</div>
+
+</footer>
+
+</div>
+
+{% block footer %}
+{% endblock %}
+
 {% endblock %}
