@@ -1,9 +1,3 @@
-setTimeout(fade_out, 5000);
-
-function fade_out() {
-  $("#alert_contact").fadeOut().empty();
-  $(".alert-danger").fadeOut().empty();
-}
 
 $(document).ready(function() {
     $('[data-fancybox="gallery"]').fancybox({
@@ -41,6 +35,7 @@ $(window).on('load', function () {
       $("footer").fadeIn(3000);
       $(".navbar-default").fadeIn(3000);
       $(".site-wrapper").fadeIn(3000);
+      $(".alert").fadeOut(9000);
 
 
 

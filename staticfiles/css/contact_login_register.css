@@ -94,7 +94,7 @@ label{
     }
 
     #login_form{
-        width:40% !important;
+        width:400px !important;
     }
 }
 
@@ -112,6 +112,13 @@ label{
 }
     #rst_pass_confirm{
         width:400px !important;
+    }
+}
+
+@media (min-width: 555px){
+    #profile_list{
+        width:550px;
+
     }
 }
 
