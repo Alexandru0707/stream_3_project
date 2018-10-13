@@ -1,50 +1,78 @@
+
 .form-group{
     margin:auto;
 }
-#email_cont > label{
+#forms{
+    background-color:#2f2f2f;
+    box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75);
+    border-radius:10px;
+    width:80%;
+
+}
+form{
+    margin-top:10px;
+    margin-bottom:10px;
     color:white;
 }
-label{
-    color:white;
-}
+
 .help-block {
     color: #e08888 !important;
 }
-#alert_contact{
-    width:50%;
-    margin:auto;
-}
 
-/*register......*/
-
-#form_register{
-    margin-top:70px;
-    width:50%;
-    margin-left:auto;
-    margin-right:auto;
+#white_container_forms{
+    background-color:#ffffffd4;
+    width:80%;
+    margin-bottom:20px;
     border-radius:10px;
 }
+.text_white_container{
+    color:black;
+    text-align:center;
+}
+
+
+
+
 
 /*login......*/
 
 #login_form{
-    width:50%;
+    background-color:#2f2f2f;
+    box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75);
+    border-radius:10px;
+    width:90%;
 }
+/* reset password */
 #rst_pass_confirm{
     margin:50px auto 50px auto;
+    background-color:#2f2f2f;
+    box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75);
+    border-radius:10px;
+    width:90%;
 }
-
-
-/* contact */
+#rst_pass{
+    background-color:#2f2f2f;
+    box-shadow: 22px -4px 101px 6px rgba(0,0,0,0.75);
+    border-radius:10px; width:90%;
+}
+/* Contact forms ....*/
 .contact_details{
     margin-top:30px;
-    font-family: 'K2D', sans-serif;
     margin-bottom: 30px;
 }
+#info_contact{
+    background-color: #ffffffd4 !important;
+    width: 80%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#email_cont{
+    background-color:#2f2f2f;  box-shadow: -43px 6px 112px -13px rgba(0,0,0,0.69); border-radius:10px;  width:80%;
+}
 
+/* media queries....*/
 
-
-/* media queries ....*/
 @media (min-width: 656px) {
     #email_cont {
         min-width: 150px !important;
@@ -55,8 +83,8 @@ label{
         bottom: 170px;
         box-shadow: -43px 6px 112px -13px rgba(0, 0, 0, 0.69);
         border-radius: 10px;
-
     }
+
     #info_contact{
         min-width:600px !important;
         max-width:700px !important;
@@ -66,50 +94,41 @@ label{
         text-align:left !important;
     }
 
-    #register_form {
+    #forms {
         min-width: 150px !important;
         max-width: 320px !important;
-
-        background-color: #2f2f2f;
         position: relative;
         right: 150px;
         bottom: 100px;
-        box-shadow: -43px 6px 112px -13px rgba(0, 0, 0, 0.69);
-        border-radius: 10px;
+
 
     }
 
-    #text_register {
+    #white_container_forms {
         min-width: 600px !important;
         max-width: 700px !important;
-        height: 40%;
         position: relative;
         top: 130px;
         height:150px;
+
     }
 
-    .forgo_password{
+    .text_white_container{
         text-align:right !important;
         margin-top:55px;
     }
-
     #login_form{
         width:400px !important;
     }
 }
 
-@media (max-width: 600px){
-    .form-group{
-        width:100%;
-    }
-}
 
 @media (min-width: 400px){
     #rst_pass{
         width:400px !important;
         margin:auto;
 
-}
+    }
     #rst_pass_confirm{
         width:400px !important;
     }
@@ -121,4 +140,9 @@ label{
 
     }
 }
+@media (max-width: 600px){
+    .form-group{
+        width:100%;
+    }
 
+}

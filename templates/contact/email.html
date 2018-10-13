@@ -7,23 +7,22 @@
 {% endblock %}
 
 {% block content %}
-<body id="background" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
-<h1 style="text-align:center; color:white; font-family: 'K2D', sans-serif;">Contact</h1>
-<hr style="width:40%;">
-<h4 style="text-align:center; color:white; font-family: 'K2D', sans-serif;">FOR GENERAL ENQUIRIES/PRESS - Please use the contact form below.</h4>
+<body id="bg">
+<h1 id="title_pages">Contact</h1>
+<hr class="hr_top">
+<h4 style="text-align:center; color:white;">FOR GENERAL ENQUIRIES/PRESS - Please use the contact form below.</h4>
 
-<div class="container" id="info_contact"  style="background-color:#ffffffd4; width:80%; margin-bottom:20px;
- border-radius:10px; text-align:center;">
+<div class="container" id="info_contact">
     <h5 class="contact_details" style="color:#d5242a;">Tel*<br>0894414459</h5>
-    <h5 class="contact_details" style="color:black;">E-mail*<br>alex_boys30@yahoo.com</h5>
-    <h5 class="contact_details" style="color:black;">Adress*<br>29 Norfolk Road,Phibsboro,<br>Dublin 7</h5>
+    <h5 class="contact_details">E-mail*<br>alex_boys30@yahoo.com</h5>
+    <h5 class="contact_details">Adress*<br>29 Norfolk Road,Phibsboro,<br>Dublin 7</h5>
 
 </div>
 
 
-<div class="container" id="email_cont" style=" background-color:#2f2f2f;  box-shadow: -43px 6px 112px -13px rgba(0,0,0,0.69); border-radius:10px;  width:80%; ">
+<div class="container" id="email_cont">
 
-<form method="post" style="margin-left:auto; margin-right:auto; margin-top:10px;">
+<form method="post">
     {% csrf_token %}
     {% for hidden in form.hidden_fields %}
       {{ hidden }}
@@ -47,5 +46,6 @@
     </div>
 </form>
 </div>
+</body>
 
 {% endblock %}

@@ -4,14 +4,10 @@
 
 <style>
     .paralax{
-
-
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-        margin-top:-20px;
+            height: 100%;
+            background: fixed center no-repeat;
+            background-size: cover;
+            margin-top:-20px;
 }
 </style>
 
@@ -31,7 +27,7 @@
             -Keep scrolling-</p>
     </div>
 </div>
-<div class="paralax" style="background-image:url('static/media/paralax_1.jpg');">
+<div class="paralax" style="background-image:url('../static/media/paralax_1.jpg');">
 </div>
 <div class="white_field">
     <div class="text-paralax">
@@ -41,7 +37,7 @@
             -Keep scrolling-</p>
     </div>
 </div>
-<div class="paralax" style="background-image:url('static/media/paralax_2.jpg');">
+<div class="paralax" style="background-image:url('../static/media/paralax_2.jpg');">
 </div>
 <div class="white_field">
     <div class="text-paralax">
@@ -50,15 +46,15 @@
         If you'd like to see more pictures<br><a href="/gallery/" style="color:red;"> Click here</a></p>
     </div>
 </div>
-<div class="paralax" style="background-image:url('static/media/paralax_3.jpg');">
-    <div class="empty" style="height:480px;"></div>
+<div class="paralax" style="background-image:url('../static/media/paralax_3.jpg');">
+    <div class="empty_div_footer"></div>
     <footer style="display:none;">
-        <hr style="color:white; width:70%">
-        <h4 style="color:white; text-align:center; font-family: 'Noto Serif KR', sans-serif;" >Created by Alexandru Cozma</h4>
+        <hr class="footer_hr">
+        <h4 class="footer_h4">Created by Alexandru Cozma</h4>
         <div id="icons">
-        <a href="https://www.facebook.com/cozma.alexandru.754"><img src="{% static 'media/facebook-2-24.ico'%}" alt=""></a>
-        <a href="https://www.instagram.com/alexandru_0707/"><img src="{% static 'media/instagram-24.ico'%}" alt="" style="margin-left:60px; margin-right:60px"></a>
-        <a href="https://github.com/Alexandru0707"><img src="{% static 'media/github-24.ico'%}" alt=""></a>
+        <a href="https://www.facebook.com/cozma.alexandru.754"><img src="{% static 'media/facebook-2-24.ico'%}" alt="icon"></a>
+        <a href="https://www.instagram.com/alexandru_0707/"><img src="{% static 'media/instagram-24.ico'%}" alt="icon" id="middle_icon"></a>
+        <a href="https://github.com/Alexandru0707"><img src="{% static 'media/github-24.ico'%}" alt="icon"></a>
 </div>
 
 </footer>

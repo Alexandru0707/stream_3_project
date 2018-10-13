@@ -10,6 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     {% endblock %}
+
     {% block head-css %}
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
@@ -25,17 +26,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
-
     {% endblock %}
-
     {% block css %}
     {% endblock %}
 
     {% block additional_styles %}
     <style>
-
         body {
-            background-image:url( 'static/media/IMG_0923-2.jpg' );
+            background:url('../static/media/IMG_0923-2.jpg') ;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: right center;

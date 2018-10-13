@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block content %}
-<body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
+{% endblock %}
+
+<body id="bg">
 
 <div class="container" id="profile_list">
-  <h2 style="text-align:center; color:white;">Profile Details</h2>
+  <h1 id="title_pages">Profile </h1>
   <hr>
   <ul class="list-group" >
     <li class="list-group-item">You Are Logged In As*<br> <strong> {{ user.email }}</strong></li>
@@ -15,7 +19,10 @@
     <li class="list-group-item">Is SuperUser*<br><strong>{{user.is_superuser}}</strong></li>
   </ul>
 </div>
+
 <h3 style="text-align:center;color:white; margin-top:10px;" >Update profile <a href="/profile_update/" style="color: #d5242a;">Click here!</a></h3>
 <h3 style="text-align:center;color:white; margin-top:50px;" >Reset your password <a href="/password_reset/" style="color: #d5242a;">Click here!</a></h3>
+</body>
+
 
 {% endblock %}

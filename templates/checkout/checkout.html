@@ -10,17 +10,16 @@
   </script>
   <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
-
 {% block content %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
-<body id="bg" style="background-image: url('{% static "media/grey and white.jpg"%}')";>
+<body id="bg">
 
 <div class="container">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <h3 style="text-align:center; color:white">Payment Details</h3>
-        <hr style="width:40%;">
+    <h1 id="title_pages">Payment Details</h1>
+        <hr class="hr_top">
     <div id="credit-card-errors">
         <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
@@ -45,5 +44,6 @@
     </div>
     </form>
 </div>
+</body>
 
 {% endblock %}

@@ -1,16 +1,22 @@
+#bg{
+    background-image: url('../media/grey and white.jpg');
+    background-size:cover;
+}
+#bg_blog{
+    background-image:url('../media/blur.jpg');
+    background-size:cover;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'K2D', sans-serif !important;
 }
-@media (min-width: 768px) {
-
-    #bg {
-        background-size: 100%;
-    }
+.hr_top{
+    width:40%
 }
-@media (max-width: 768px) {
-    #bg{
-        background-size:auto;
-    }
+#title_pages{
+    color:white !important;
+    text-align:center !important;
+    margin-bottom:30px !important;
 }
 
 .navbar-default{
@@ -167,6 +173,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .logo{
      position:relative;
+
      top:200px;
      font-family: 'Prata', serif;
      color:white;
@@ -221,6 +228,24 @@ h1,h2,h3,h4,h5,h6 {
     height:180px;
 }
 
+/*...............footer.........*/
+.footer_hr{
+    color:white; width:70%
+}
+.footer_h4{
+    color:white;
+    text-align:center;
+
+}
+#middle_icon{
+    margin-left:60px;
+    margin-right:60px;
+}
+.empty_div_footer{
+    height:450px;
+}
+
+
 
 /* Medial queries....*/
 @media (max-width: 1200px){
@@ -257,6 +282,9 @@ h1,h2,h3,h4,h5,h6 {
     .product_details{
         text-align:center;
     }
+
+}
+@media (max-width:550px){
     .image_product{
         width:100% !important;
     }
@@ -279,6 +307,9 @@ h1,h2,h3,h4,h5,h6 {
         background-color:black;
         opacity:0.8;
     }
+    #return-to-top{
+        display:none;
+    }
 }
 @media (max-width: 360px){
     .text-paralax > p{
@@ -290,7 +321,7 @@ h1,h2,h3,h4,h5,h6 {
     }
     footer{
         position:relative;
-        bottom:20px;
+
     }
 }
 
