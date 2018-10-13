@@ -42,15 +42,7 @@
         width:100%;
     }
 }
-@media (min-width: 768px) {
-    #bg {
-        background-size: 100%;
-    }
-}
-@media (max-width: 768px) {
-    #bg{
-        background-size:auto;
-    }
-}
+
+
 
 
