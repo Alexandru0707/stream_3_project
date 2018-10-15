@@ -16,19 +16,19 @@
   <div class="row" style="margin-bottom:70px;">
     <div class="col-md-7">
         {% if item.product.image %}
-        <img src="/media/{{ item.product.image}}" class="image_product">
+        <img src="/media/{{ item.product.image}}" class="image_product_cart">
         {% endif %}
     </div>
 
-<div class="col-md-4">
-    <div class="product_details">
+<div class="col-md-4 text-center">
+    <div class="product_details_cart">
             <h2 style="margin-bottom:20px; color:black;">{{ item.product.name }}</h2>
-            <p class="product-description">{{ item.product.description }}</p>
-            <p> € {{ item.product.price }}</p>
+            <p class="product-description">{{ item.product.description | linebreaks }}</p>
+            <p> € {{ item.product.price  }}</p>
 
         <form method="post" action="{%  url 'adjust_cart' item.id %}">
             {% csrf_token %}
-                <input type="submit" class="btn btn-default"  value="remove">
+                <input type="submit" class="btn btn-danger"  value="remove">
         </form>
         <hr>
     </div>
