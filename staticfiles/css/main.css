@@ -280,6 +280,12 @@ h1,h2,h3,h4,h5,h6 {
 .third_p{
     margin:25px 5px 25px 5px;
 }
+.paralax{
+    height: 100%;
+    background: fixed center no-repeat;
+    background-size: cover;
+    margin-top:-20px;
+}
 
 /*...............footer.........*/
 .footer_hr{
@@ -364,19 +370,7 @@ h1,h2,h3,h4,h5,h6 {
         display:none;
     }
 }
-@media (max-width: 360px){
-    .text-paralax > p{
-        font-size:5vw;
 
-    }
-    .text-paralax{
-        top:30px !important;
-    }
-    footer{
-        position:relative;
-
-    }
-}
 
 
 
