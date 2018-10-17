@@ -469,6 +469,9 @@ th td{
     #bg_home{
         background-attachment:scroll;
     }
+    #icons > a >img {
+        opacity:1.0;
+    }
 }
 
 
