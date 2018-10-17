@@ -28,16 +28,7 @@
     {% endblock %}
 
     {% block additional_styles %}
-    <style>
-        body {
-            background:url('../static/media/IMG_0923-2.jpg') ;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: right center;
-            background-attachment: fixed;
-            height: 100%;
-            }
-    </style>
+
     {% endblock %}
     {% block head_js %}
     {% endblock head_js %}
@@ -101,6 +92,7 @@
     Loading
   </div>
 </div>
+<body id="bg_home">
 <div class="site-wrapper" id="empty_div" style="display:none;">
         {% block content %}
         {% endblock %}
@@ -112,6 +104,6 @@
 {% include 'footer.html' %}
 {% endblock %}
 
-
+</body>
 <script src="{% static 'js/main.js' %}"></script>
 </html>
