@@ -30,11 +30,11 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 });
 
 $(window).on('load', function () {
-      $(".bg_gallery").fadeIn(3000).show();
+      $(".bg_gallery").fadeIn(1000).show();
       $(".spinner-wrapper").hide();
-      $("footer").fadeIn(3000);
-      $(".navbar-default").fadeIn(3000);
-      $(".site-wrapper").fadeIn(3000);
+      $("footer").fadeIn(1000);
+      $(".navbar-default").fadeIn(1000);
+      $(".site-wrapper").fadeIn(1000);
       $(".alert").fadeOut(9000);
  });
 
