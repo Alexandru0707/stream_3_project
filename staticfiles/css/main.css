@@ -13,16 +13,16 @@ h1,h2,h3,h4,h5,h6 {
 .hr_top{
     width:40%
 }
-#title_pages{
-    color:white !important;
-    text-align:center !important;
-    margin-bottom:30px !important;
+h1#title_pages{
+    color:white ;
+    text-align:center ;
+    margin-bottom:30px ;
 }
 
-.navbar-default{
-    background:black !important;
+nav.navbar-default.navbar-static{
+    background:black;
     opacity:0.5;
-    text-align:center !important;
+    text-align:center;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
@@ -40,8 +40,8 @@ h1,h2,h3,h4,h5,h6 {
     opacity: 1.0;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #f9f9f97d !important;
+.navbar-default.navbar-static button.navbar-toggle:hover, .navbar-default.navbar-static button.navbar-toggle:focus {
+    background-color: #f9f9f97d;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
      border-color: white !important;
@@ -74,8 +74,8 @@ h1,h2,h3,h4,h5,h6 {
     height:600px;
 
 }
-#icons :hover{
-    opacity:1 !important;
+#icons a :hover{
+    opacity:1 ;
 }
 
 /*........return to top Button......*/
@@ -180,9 +180,9 @@ h1,h2,h3,h4,h5,h6 {
 
 
  }
-/*product page checkout, cart */
-.img-product{
-    width:100% !important;
+/*product page and checkout */
+img.img-product{
+    width:100%;
 }
 
 .card {
@@ -224,21 +224,55 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 1.65em;
     color:black;
 }
-.card-title p {
-    color: #000000;
-    text-decoration: none !important;
+
+img.image_product_cart{
+    display:block;
+    width:70%;
+    margin:20px auto 20px auto ;
 }
 
 
-.image_product_cart{
-    display:block;
-    width:70% !important;
-    margin:20px auto 20px auto ;
+/*.....Cart.......*/
+#cart_container.container{
+    background-color:rgba(0,0,0,0.47);
+    margin-bottom:70px;
+    border-radius:10px
+}
+
+.product_name_cart{
+    color: #a8a8a8;
+    margin-bottom:40px;
+}
+.product-price-quantity{
+    color:white;
+}
+#button_cart.btn{
+    border-radius:50px;
+}
+.table{
+    width:40%;
+    background-color:whitesmoke;
+    float:right;
+    margin-bottom:50px;
+}
+th td{
+    height:100px;
+}
+.total_th{
+    font-weight:normal;
+}
+#btn_cart.btn.btn-success{
+    background-image:none !important;
+
+    font-size:20px;
+}
+
+.product_details_cart{
+    color:white;
 }
 .product_details_cart{
     color:white;
 }
-
 
 #text_payment{
     color:white;
@@ -308,17 +342,15 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Medial queries....*/
 @media (max-width: 1200px){
-    #payment_form{
-        margin-left:170px !important;
+    #payment_form.form-group.col-md-4{
+        margin-left:170px;
     }
 }
 @media (max-width: 990px){
-    #payment_form{
-        margin-left:auto !important;
+    #payment_form.form-group.col-md-4{
+        margin-left:auto;
     }
 }
-
-
 
 @media (min-width: 768px) {
     .navbar-nav > li {
@@ -336,17 +368,34 @@ h1,h2,h3,h4,h5,h6 {
         margin: 0;
     }
 }
+@media (max-width:388px){
+    a.navbar-brand.navbar-right{
+        font-size:15px;
+
+
+    }
+}
+@media (max-width:346px){
+    #nav-container.container{
+        height:100%;
+        width:100%;
+    }
+    button.navbar-toggle{
+        float:none;
+        margin-right:0px;
+    }
+    a.navbar-brand.navbar-right{
+        padding:5px 30px 5px 30px;
+
+    }
+
+}
 
 @media (max-width: 990px){
     .product_details{
         text-align:center;
     }
 
-}
-@media (max-width:550px){
-    .image_product{
-        width:100% !important;
-    }
 }
 @media (max-width: 931px){
      .logo {
@@ -370,6 +419,38 @@ h1,h2,h3,h4,h5,h6 {
         display:none;
     }
 }
+@media (max-width:769px) {
+    .table.table.table-bordered {
+        float: none;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:30px;
+        width:70%;
+    }
+}
+@media (max-width:765px){
+    #cart_container.container{
+        width:70%;
+    }
+    img.image_product_cart{
+        width:100%;
+    }
+}
+@media (max-width:275px){
+    .product_name_cart{
+        font-size:20px;
+    }
+}
+@media (min-width:769px) {
+    #cart_row.row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
 
 
 

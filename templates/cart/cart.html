@@ -10,44 +10,69 @@
 
 <h1 id="title_pages"> Shopping Cart</h1>
 <hr class="hr_top">
-
-    {% for item in cart_items %}
-<div class="container">
-  <div class="row" style="margin-bottom:70px;">
-    <div class="col-md-7">
+{% for item in cart_items %}
+<div class="container"  id="cart_container">
+  <div class="row" id="cart_row">
+    <div class="col-md-4 col-sm-4  text-center">
         {% if item.product.image %}
         <img src="/media/{{ item.product.image}}" class="image_product_cart">
         {% endif %}
     </div>
-
-<div class="col-md-4 text-center">
-    <div class="product_details_cart">
-            <h2 style="margin-bottom:20px; color:black;">{{ item.product.name }}</h2>
-            <p class="product-description">{{ item.product.description | linebreaks }}</p>
-            <p> € {{ item.product.price  }}</p>
-
-        <form method="post" action="{%  url 'adjust_cart' item.id %}">
-            {% csrf_token %}
-                <input type="submit" class="btn btn-danger"  value="remove">
-        </form>
-        <hr>
+    <div class="col-md-4 col-sm-4  text-center">
+        <h2 class="product_name_cart">{{ item.product.name }}</h2>
+        <h5 class="product-price-quantity">Product price: <strong> € {{ item.product.price  }}</strong></h5>
+        <h5 class="product-price-quantity">Quantity: <strong>{{item.quantity}} </strong></h5>
     </div>
-</div>
+
+    <div class=" col-md-3 col-sm-3  text-center">
+        <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <div class="input-group">
+                   <input name="quantity"  type="number" min="1" max="999" class="form-control" placeholder="{{item.quantity}}">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default">Add Qty</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+      <div class="col-md-1 col-sm-1 text-center">
+          <form method="post" action="{%  url 'delete_cart' item.id %}">
+            {% csrf_token %}
+            <input type="submit" class="btn btn-danger" id="button_cart"  value="X">
+          </form>
+      </div>
   </div>
 </div>
-    {% endfor %}
+{% endfor %}
 
 {% if product_count > 0 %}
+<div class="container">
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Subtotal</th>
+        <th class="total_th"> € {{total}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Total<strong></td>
+        <td> € {{total}}</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+
 <div class="row" align="center">
-    <p style="color:white;">Total</p>
-    <p style="color:white;"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
-    <a href="{% url 'checkout' %}" class="btn btn-success" role="button">
+
+    <a href="{% url 'checkout' %}" class="btn btn-success" id="btn_cart" role="button">
         <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
 </div>
 {% else %}
 <h1 style="text-align:center; color:white;">Your cart is empty!</h1>
 <h2 style="text-align:center; color:white; margin-bottom: 400px;">Back to <a href="/products/">Shop</a></h2>
 {% endif %}
-</div>
 </body>
 {% endblock %}

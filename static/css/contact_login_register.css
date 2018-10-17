@@ -59,9 +59,10 @@ form{
 .contact_details{
     margin-top:30px;
     margin-bottom: 30px;
+    word-break:break-all;
 }
-#info_contact{
-    background-color: #ffffffd4 !important;
+#info_contact.container{
+    background-color: #ffffffd4;
     width: 80%;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -74,9 +75,9 @@ form{
 /* media queries....*/
 
 @media (min-width: 656px) {
-    #email_cont {
-        min-width: 150px !important;
-        max-width: 320px !important;
+    #email_cont.container {
+        min-width: 150px;
+        max-width: 320px;
         background-color: #2f2f2f;
         position: relative;
         left: 150px;
@@ -85,18 +86,18 @@ form{
         border-radius: 10px;
     }
 
-    #info_contact{
-        min-width:600px !important;
-        max-width:700px !important;
+    #info_contact.container{
+        min-width:600px;
+        max-width:700px;
         height:40%;
         position:relative;
         top:130px;
-        text-align:left !important;
+        text-align:left;
     }
 
-    #forms {
-        min-width: 150px !important;
-        max-width: 320px !important;
+    #forms.container {
+        min-width: 150px ;
+        max-width: 320px ;
         position: relative;
         right: 150px;
         bottom: 100px;
@@ -104,33 +105,33 @@ form{
 
     }
 
-    #white_container_forms {
-        min-width: 600px !important;
-        max-width: 700px !important;
+    #white_container_forms.container {
+        min-width: 600px ;
+        max-width: 700px ;
         position: relative;
         top: 130px;
         height:150px;
 
     }
 
-    .text_white_container{
-        text-align:right !important;
+    h4.text_white_container{
+        text-align:right;
         margin-top:55px;
     }
-    #login_form{
-        width:400px !important;
+    #login_form.container{
+        width:400px;
     }
 }
 
 
-@media (min-width: 400px){
-    #rst_pass{
-        width:400px !important;
+@media (min-width: 434px){
+    #rst_pass.container{
+        width:400px;
         margin:auto;
 
     }
-    #rst_pass_confirm{
-        width:400px !important;
+    #rst_pass_confirm.container{
+        width:400px;
     }
 }
 

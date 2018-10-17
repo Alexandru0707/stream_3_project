@@ -17,14 +17,11 @@
     <link rel="stylesheet" href="{% static 'css/gallery_css.css' %}">
     <link rel="stylesheet" href="{% static 'css/contact_login_register.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
     {% endblock %}
     {% block css %}
@@ -52,7 +49,7 @@
 
 <div id="navbar">
 <nav class="navbar-default navbar-static" style="display:none;">
-		<div class="container">
+		<div class="container" id="nav-container">
              <div class="masthead">
 		  <div class="navbar-header">
 		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myList">
@@ -60,11 +57,10 @@
 		    <span class="icon-bar"></span>
 		    <span class="icon-bar"></span>
 		    </button>
-           <a class="navbar-brand navbar-right" href="/">Alexandru Cozma Photography</a>
+           <a class="navbar-brand navbar-right" href="/">Cozma Alexandru Photography</a>
 		  </div>
 		    <ul id="myList" class="nav navbar-nav navbar-center collapse navbar-collapse ">
 				 <li id="home_link"><a href="/">Home</a></li>
-                 <li><a href="#">About</a></li>
                  <li><a href="/gallery/">Gallery</a></li>
                  <li><a href="/products/">Shop</a></li>
                  <li><a href="/blog/">Blog</a></li>
