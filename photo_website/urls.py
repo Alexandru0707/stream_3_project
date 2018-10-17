@@ -20,6 +20,8 @@ from products import views as product_views
 from cart import urls as urls_cart
 from checkout import urls as urls_checkout
 
+
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.get_index, name='home'),

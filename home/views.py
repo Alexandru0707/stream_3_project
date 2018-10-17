@@ -7,9 +7,8 @@ from django.contrib.auth.decorators import login_required
 
 
 def get_index(request):
-   return render(request, 'home.html')
+    return render(request, 'home.html')
 
 
-@login_required(login_url='/login/')
 def get_gallery(request):
-   return render(request, 'gallery.html')
+    return render(request, 'gallery.html')
