@@ -27,9 +27,7 @@
     {% block css %}
     {% endblock %}
 
-    {% block additional_styles %}
 
-    {% endblock %}
     {% block head_js %}
     {% endblock head_js %}
 
@@ -92,7 +90,7 @@
     Loading
   </div>
 </div>
-<body id="bg_home">
+
 <div class="site-wrapper" id="empty_div" style="display:none;">
         {% block content %}
         {% endblock %}
@@ -104,6 +102,6 @@
 {% include 'footer.html' %}
 {% endblock %}
 
-</body>
+
 <script src="{% static 'js/main.js' %}"></script>
 </html>
