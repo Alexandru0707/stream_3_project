@@ -234,6 +234,10 @@ img.image_product_cart{
     margin:20px auto 20px auto ;
 }
 /* Cart.....*/
+.checkout.col-md-12{
+    margin-bottom:40px;
+}
+
 #cart_container.container{
     background-color:rgba(0,0,0,0.47);
     margin-bottom:70px;
@@ -250,7 +254,7 @@ img.image_product_cart{
 #button_cart.btn{
     border-radius:50px;
 }
-.table.table{
+.table.table.table-bordered{
     width:40%;
     background-color:whitesmoke;
     float:right;
@@ -446,6 +450,7 @@ th td{
         display: flex;
         justify-content: center;
         align-items: center;
+
     }
 
 }
