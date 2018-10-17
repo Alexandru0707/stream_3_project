@@ -457,7 +457,7 @@ th td{
 
 }
 @media only screen and (max-device-width: 1366px) {
-    .parallax {
+    .paralax {
         background-attachment: scroll;
     }
 }
