@@ -1,10 +1,10 @@
 #bg{
     background-image: url('../media/grey and white.jpg');
-    background-size:cover;
+    
 }
 #bg_blog{
     background-image:url('../media/blur.jpg');
-    background-size:cover;
+
 }
 #bg_home{
     background:url('../media/IMG_0923-2.jpg') ;
