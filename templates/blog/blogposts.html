@@ -2,6 +2,7 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block content %}
+
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
@@ -25,7 +26,7 @@
                 <hr>
                 <div class="row" id="blog_post_row">
                     <div class="col-md-10 text-center">
-                        <p>{{ post.content|truncatewords:40 }}</p>
+                        <p>{{ post.content|safe|truncatewords:40 }}</p>
                         <p><button class="btn"  onclick="location.href={{ post.id }}">Read More</button></p>
                         <hr>
                         <div class="row">

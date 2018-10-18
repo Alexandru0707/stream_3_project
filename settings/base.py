@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'blog',
     'disqus',
     'checkout',
-    'cart'
+    'cart',
+    'redactor'
+
 
 ]
 
@@ -149,6 +151,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+
+
+
 
 DISQUS_WEBSITE_SHORTNAME = os.getenv('DISQUS_KEY', 'Optional default value')
 

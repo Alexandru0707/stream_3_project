@@ -32,6 +32,8 @@ urlpatterns = [
     url(r'^checkout/', include(urls_checkout)),
     url(r'', include('accounts.urls')),
     url('', include('contact.urls')),
+    url(r'^redactor/', include('redactor.urls')),
+
 
 
 

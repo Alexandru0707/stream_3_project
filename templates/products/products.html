@@ -22,7 +22,7 @@ Thank you for  understanding.</h4>
                                     {{product.name}}
                                 </h4>
                                 <p>
-                                    {{product.description | linebreaks }}<br>
+                                    {{product.description |safe | linebreaks}}<br>
                                 </p>
                                 <p>
                                     <strong> € {{product.price}} </strong>
