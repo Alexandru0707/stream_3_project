@@ -1,18 +1,16 @@
 #bg{
-    background-image: url('../media/grey and white.jpg');
+    background:url('../media/grey and white.jpg')no-repeat center center fixed;
+    background-size:cover;
 
 }
 #bg_blog{
-    background-image:url('../media/blur.jpg');
-
+    background:url('../media/blur.jpg') no-repeat center center fixed;
+    background-size:cover;
 }
 #bg_home{
-    background:url('../media/IMG_0923-2.jpg') ;
+    background:url('../media/IMG_0923-2.jpg') no-repeat right center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-attachment: fixed;
-    height: 100%;
+
 }
 
 h1,h2,h3,h4,h5,h6 {
