@@ -90,6 +90,10 @@ On mobile screens min-width 240px
   - dj-database-url package installed for the project
   - migrations were run to create tables on heroku database
   - local database dumped in json file which was pushed to GitHub repository and heroku database tables populated with data from dumped json file
+  
+### Test User
+```email:test_user@test.com```  
+```password:testuser1```
 
 ### The deployed website is available [here](cozma-alexandru-photography.herokuapp.com)
 
