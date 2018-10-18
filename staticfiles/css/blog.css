@@ -81,6 +81,9 @@
 #buttons_blog{
     background-image:none ;
 }
+.post-author.col-md-3.text-center{
+    word-break:break-all;
+}
 
 
 
@@ -97,4 +100,10 @@
         margin-right:0px;
     }
 
+}
+@media screen and (max-width:440px){
+    .blog_div.col-md-8{
+        margin-left:10px;
+        margin-right:10px;
+    }
 }
