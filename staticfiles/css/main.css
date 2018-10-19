@@ -376,6 +376,13 @@ th td{
 
 
 /* Medial queries....*/
+@media (max-width:613px) {
+    .home_click_here {
+        width: 70%;
+        font-size:18px;
+
+    }
+}
 @media (max-width: 1200px){
     #payment_form.form-group.col-md-4{
         margin-left:170px;
