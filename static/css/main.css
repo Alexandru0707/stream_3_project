@@ -292,6 +292,29 @@ th td{
 }
 
 /* paralax home page */
+.h3-paralax{
+    color:#1d1b17;
+
+
+}
+
+.home_click_here{
+    background-color: #ce510963;
+    width: 20%;
+    margin: auto;
+    font-size: 20px;
+    border-left: 6px solid #5e2921;
+    border-right: 6px solid #5e2921;
+
+}
+.home_click_here:hover {
+    background-color: rgba(206, 81, 9, 0.76);
+    text-decoration:none;
+}
+ a:active, a:hover{
+    text-decoration:none !important;
+
+}
 
 
 .text-paralax{
@@ -302,7 +325,7 @@ th td{
 
 }
 .text-paralax > p{
-    color:grey;
+    color:#a63700;
     font-size:20px;
 
 
@@ -350,6 +373,14 @@ th td{
 
 
 /* Medial queries....*/
+
+@media (max-width:613px) {
+    .home_click_here {
+        width: 50%;
+        font-size:18px;
+
+    }
+}
 @media (max-width: 1200px){
     #payment_form.form-group.col-md-4{
         margin-left:170px;

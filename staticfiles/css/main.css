@@ -296,7 +296,29 @@ th td{
 }
 
 /* paralax home page */
+.h3-paralax{
+    color:#1d1b17;
 
+
+}
+
+.home_click_here{
+    background-color: #ce510963;
+    width: 20%;
+    margin: auto;
+    font-size: 20px;
+    border-left: 6px solid #5e2921;
+    border-right: 6px solid #5e2921;
+
+}
+.home_click_here:hover {
+    background-color: rgba(206, 81, 9, 0.76);
+    text-decoration:none;
+}
+ a:active, a:hover{
+    text-decoration:none !important;
+
+}
 
 .text-paralax{
     text-align:center;
@@ -306,7 +328,7 @@ th td{
 
 }
 .text-paralax > p{
-    color:grey;
+    color:#a63700;
     font-size:20px;
 
 
