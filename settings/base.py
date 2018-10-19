@@ -16,7 +16,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'Optional default value')
 
 ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
 
-SITE_ID = 3
+SITE_ID = 1
 
 
 
