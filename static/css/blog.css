@@ -80,7 +80,8 @@
 }
 .h1_title{
     text-align:center;
-    word-break: break-all;
+
+
 }
 #buttons_blog{
     background-image:none ;
@@ -89,6 +90,7 @@
 
 
 /* Media queries...*/
+
 
 @media screen and (min-width: 768px) {
     #masthead h1 {
@@ -106,5 +108,10 @@
     .blog_div.col-md-8{
         margin-left:10px;
         margin-right:10px;
+    }
+}
+@media screen and (max-width:447px){
+    #container-white-1{
+        width:90%;
     }
 }

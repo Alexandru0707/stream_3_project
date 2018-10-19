@@ -76,7 +76,7 @@
 }
 .h1_title{
     text-align:center;
-    word-break: break-all;
+    
 }
 #buttons_blog{
     background-image:none ;
@@ -105,5 +105,11 @@
     .blog_div.col-md-8{
         margin-left:10px;
         margin-right:10px;
+    }
+}
+
+@media screen and (max-width:447px){
+    #container-white-1{
+        width:90%;
     }
 }
