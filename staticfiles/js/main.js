@@ -38,3 +38,15 @@ $(window).on('load', function () {
       $(".alert").fadeOut(9000);
  });
 
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+
+// popover close when click outside
+$('body').on('click', function (e) {
+    if ($(e.target).data('toggle') !== 'popover'
+        && $(e.target).parents('.popover.in').length === 0) {
+        $('[data-toggle="popover"]').popover('hide');
+    }
+ });
+
