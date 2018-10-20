@@ -14,7 +14,11 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
+<style>
+
+</style>
 <body id="bg">
+
 
 <div class="container">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
@@ -24,22 +28,36 @@
         <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
 
-    <div class="form-group col-md-4" id="payment_form">
+    <div class="form-group col-md-4 " id="payment_form">
         {{ order_form|as_bootstrap }}
     </div>
-        <div class="form-group col-md-4">
-            <h3 style="color:black;">Payment is in test mode</h3>
-            <p style="color:white">*You can use  this cards:<br>4242 4242 4242 4242<br>4000 0566 5566 5556<br>
-                *CVV three digits of your choice<br>
-                E.g 123 546<br>
-                *Expiry date must be a date in the future,otherwise it wil return card expired.
-            </p>
-            <hr>
+
+        <div class="col-md-4 text-center">
+            <i class="fa fa-info-circle" data-placement="bottom" data-toggle="popover" title="Payment is in test mode"
+               data-html="true" data-content="*You can use this cards:<br>
+                   <strong>4242 4242 4242 4242</strong><br>
+                   <strong>4000 0566 5566 5556</strong><br>
+                   *CVV three digits of your choice<br>
+                   <strong>E.g 123 546</strong><br>
+                   *Expiry date must be a date in the future,otherwise it wil return card expired.">
+            </i>
+        </div>
+     <div class="form-group col-md-4">
         {{ payment_form|as_bootstrap }}
+     </div>
+
+
+    <div class="paper col-md-4  text-center">
+        <h3>Your order</h3>
+        {% for item in cart_items %}
+            <h5>Product:<strong>{{ item.product.name }}</strong></h5>
+        <h5>   Quantity:<strong>{{item.quantity}}</strong></h5>
+        {% endfor %}
+        <h4 style="text-align:right">Total:€ {{total}}</h4>
     </div>
 
     {% csrf_token %}
-        <div class="form-group col-md-12" style="text-align:center;">
+        <div class="form-group  col-md-12" style="text-align:center;">
         <input class="btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
     </div>
     </form>
