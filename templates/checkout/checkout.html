@@ -14,7 +14,7 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
-<body id="bg">
+<body id="shop_cart_bg">
 <div class="container">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
     <h1 id="title_pages">Payment Details</h1>
@@ -50,7 +50,7 @@
         {% endfor %}
         <h4 style="text-align:right">Total:€ {{total}}</h4>
     </div>
-        
+
     {% csrf_token %}
         <div class="form-group  col-md-12" style="text-align:center;">
         <input class="btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
