@@ -208,7 +208,7 @@ nav.navbar-default.navbar-static{
 i.fa.fa-info-circle{
     font-size:35px;
     cursor:pointer;
-    margin:25px 0px 19px 0px;
+    margin:100px 0px 100px 0px;
 }
 #popover{
     margin:22px 0px 21px 0px;
@@ -420,7 +420,7 @@ th td{
 }
 @media (max-width: 1200px){
     #payment_form.form-group.col-md-4{
-        margin-left:170px;
+        margin-left:165px;
     }
 }
 @media (max-width: 990px){
@@ -532,6 +532,12 @@ th td{
     }
     #bg_home{
         background-attachment:scroll;
+    }
+}
+
+@media (min-width: 992px) {
+    .paper.col-md-8.col-md-push-2 {
+        left: 17.5%;
     }
 }
 

@@ -14,12 +14,7 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/extra.css' %}" type="text/css" />
 {% endblock %}
-<style>
-
-</style>
 <body id="bg">
-
-
 <div class="container">
     <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
     <h1 id="title_pages">Payment Details</h1>
@@ -47,7 +42,8 @@
      </div>
 
 
-    <div class="paper col-md-4  text-center">
+    <div class="paper col-md-8 col-md-push-2 text-center">
+
         <h3>Your order</h3>
         {% for item in cart_items %}
             <h5>Product:<strong>{{ item.product.name }}</strong></h5>
@@ -55,6 +51,9 @@
         {% endfor %}
         <h4 style="text-align:right">Total:€ {{total}}</h4>
     </div>
+
+
+
 
     {% csrf_token %}
         <div class="form-group  col-md-12" style="text-align:center;">
