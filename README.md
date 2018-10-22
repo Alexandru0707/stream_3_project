@@ -95,7 +95,7 @@ On mobile screens min-width 240px
 ```email:test_user@test.com```  
 ```password:testuser1```
 
-### The deployed website is available [here](cozma-alexandru-photography.herokuapp.com)
+### The deployed website is available [here](https://cozma-alexandru-photography.herokuapp.com)
 
 ### Authors
  - Cozma Alexandru Adrian
