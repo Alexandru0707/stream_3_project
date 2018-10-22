@@ -1,5 +1,5 @@
 #bg{
-    background:url('../media/grey and white.jpg')no-repeat center center fixed;
+    background:url('../media/1234.png')no-repeat center center fixed;
     background-size:cover;
 
 }
@@ -12,11 +12,9 @@
     background-size: cover;
 
 }
-#shop_cart_bg{
-    background:url('../media/grey.jpg') no-repeat right center fixed;
-    background-size: cover;
 
-}
+
+
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'K2D', sans-serif !important;
