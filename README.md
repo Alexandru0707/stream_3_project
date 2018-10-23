@@ -74,6 +74,9 @@ The HTML and CSS code was validated using CSS validator The W3C CSS Validation S
 I've tested Google Chrome, Firefox, Internet Explorer on small, medium and large screens as well as on mobile screens.
 Forms,cart,product page,and payment was teste visually  
 On mobile screens min-width 240px
+### Bugs
+After ```heroku run python manage.py collectstatic``` the staticfiles were duplicated  
+The gallery page is loading a bit slow,I resized the images as much as I could,when i run on __localhost__ it doesn't take that much time
 
 ### Deployment  
   - Settings directory was created with different settings files (base settings, development settings and staging settings)  
