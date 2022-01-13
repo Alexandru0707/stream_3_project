@@ -20,5 +20,5 @@ stripe==2.8.1
 urllib3==1.23
 whitenoise==3.2
 django-disqus
-pillow==2.9.0
+pillow==9.0.0
 django-wysiwyg-redactor
